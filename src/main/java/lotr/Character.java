@@ -1,3 +1,5 @@
+package lotr;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,9 +10,8 @@ public class Character {
     int hp;
 
     public Character() {
-        Character character = CharacterFactory.createCharacter();
-        this.power = character.getPower();
-        this.hp = character.getHp();
+        this.power = 10;
+        this.hp = 10;
     }
 
     public Character(int power, int hp) {
@@ -20,15 +21,15 @@ public class Character {
 
     public void kick(Character c) {
         c.hp = 0;
-        System.out.println("Character kicked");
+        System.out.println("lotr.Character kicked");
     }
 
     public boolean isAlive() {
         if (this.hp > 0) {
-            System.out.println("Character is alive");
+            System.out.println("lotr.Character is alive");
             return true;
         } else {
-            System.out.println("Character is dead");
+            System.out.println("lotr.Character is dead");
             return false;
         }
     }

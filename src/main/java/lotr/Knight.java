@@ -1,6 +1,8 @@
+package lotr;
+
 public class Knight extends Character {
     public Knight() {
-        super();
+        super(Random.randomInt(2, 12), Random.randomInt(2, 12));
     }
 
     public void kick(Character c) {
@@ -9,6 +11,6 @@ public class Knight extends Character {
     }
 
     public String toString() {
-        return "Knight" + super.toString();
+        return "lotr.Knight" + super.toString();
     }
 }

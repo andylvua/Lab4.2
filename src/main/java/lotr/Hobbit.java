@@ -1,3 +1,5 @@
+package lotr;
+
 public class Hobbit extends Character {
     public void setHp (int hp) {
         if (hp >= 0 && hp <= 3) {

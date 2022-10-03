@@ -1,3 +1,5 @@
+package lotr;
+
 public class Elf extends Character {
     public Elf() {
         this.power = 10;
